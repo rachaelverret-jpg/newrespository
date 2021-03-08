@@ -1,15 +1,13 @@
-const users = [
-    {username: 'codeiscool'},
-    {username: 'darkknight'},
-    {username: 'smith123'}
-];
-
-findByUsername(users, 'codeiscool')
-findByUsername(users, 'taco')
-
-const users = [
-    {username: 'codeiscool'},
-    {username: 'darkknight'},
-    {username: 'smith123'}
-];
-removeUser(users, 'smith123')
+function findUserByUsername(usersArray, username) {
+    return usersArray.find(function(user){
+      return user.username === username;
+    })
+  }
+  function removeUser(usersArray, username) {
+    let foundIndex = usersArray.findIndex(function(user){
+      return user.username === username;
+    })
+    if(foundIndex === -1) return;
+  
+    return usersArray.splice(foundIndex,1)[0];
+  }
