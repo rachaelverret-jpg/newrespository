@@ -1,0 +1,8 @@
+Exercise answer:
+const PI = 3.14;
+PI = 42;
+
+1: . Var can re reasigned and redeclared, let can only be reasigned. Var can have a much broader scope than let.
+2: You can neither redeclare or redesign const when you can do both with let.Const is block scoped.
+3: const can't be reasigned.
+5: Letting a variable act/ be invoked before it's invoded in the code.
